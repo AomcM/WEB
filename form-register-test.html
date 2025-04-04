@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    min-height: 100vh ;
+    background: linear-gradient(90deg,#e2e2e2,#c9d6ff);
+}
+.div-container{
+    position: relative;
+    width: 950px;
+    height: 550px;
+    background: #fff;
+    border-radius: 20%;
+    box-shadow: 0 0 30px rgba(0, 0,0,.2);
+    overflow: hidden;
+}
+.box{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background:#fff ;
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    z-index: 1;
+}
+
+form{
+    width: 100%;
+
+}
+.div-container.h1{
+    font-size: 36px;
+    margin: -10px 0px;
+
+}
+.div-container p{
+    font-size: 14.5px;
+    margin: 15px 0;
+}
+.div-intput-box{
+    position: relative;
+    margin: 30px 0px;
+}
+.div-intput-box input{
+
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+  
+    background: #eee;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+.div-intput-box input::placeholder{
+    font-weight: 400;
+    color: #888;
+
+}
+.div-intput-box img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+}
+
+.div-forgot-link a{
+    font-size: 14.5px;
+    color: #333;
+    text-decoration: none;
+}
+.bnt{
+    width: 100%;
+    height: 48px;
+    background: #7494ec;
+    border-radius: 8px;
+    box-shadow: 0 0 10 rgba(0, 0,0,.1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+    
+
+}
+.div-social-icon a {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px ;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    margin: 0 8px ;
+
+}
+.div-social-icon a:hover{
+    background-color: #7494ec;
+    transform: translate(0,-10px);
+}
+.toggle-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+}
+.toggle-box::before{
+    content:'' ;
+    position: absolute;
+    left: -250%;
+    width: 300%;
+    height: 100%;
+    background-color: #7494ec;
+   border-radius: 30px;
+}
+/* This is a single-line comment */
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+ background-color:#7494ec; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+  
+}
+.toggle-panel p{
+    margin-bottom: 20px;
+
+}
+.toggle-panel .bnt{
+    width: 160px;
+    height: 46px;
+    background: transparent;
+    border: 2px solid #fff;
+    box-shadow: none;
+
+}
+
+.div-input-box {
+    position: relative;
+}
+
+.div-input-box i {
+    position: absolute;
+    right: 10px; /* Adjust the value as needed */
+}
+button:hover{
+    
+    background-color: #ccddeb;
+    
+
+}
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+   background-color: #7494ec;
+   text-align: center;
+   border: 2px solid black;
+     }
+     .bnt {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.3s ease-in-out;
+}
+    </style>
+</head>
+<body>
+    <div class="div-container">
+         
+       
+       <!--register div --> 
+       <div class="box register">
+       <form action="" method="get">
+        <h1>--Register--</h1>
+        <div class="div-intput-box">
+          <input type="text" placeholder="username" required="required">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO5JREFUSEvVldENwjAMRK+bwCTAJjAJMAlsApsAkwCHEtS6jm0ligSWqvaj9bPPznVA5xg650cUsACwB7B9X3cAVwDH9GzWGAGsAVyULATtEqwIiQBuANiBFoQsrRY8ACU5OXPaWF14gEPS3mJwFnxPDQ9Q0n+cjHM41wKoPQfcbQYszOrC1J8fexLlzvM5IIyRV5T35nPg5fhtANdvleYgK82W8ahZU2rNA1baHg2m2oY25Mjul3SfbZUGsLzHG/jMmyQgYg0eZGIdEkDdaXAtwX8FpfqEBLTIk3NOZJKAZ0vpo2+/eaNWUc39f8ALCDsoGfKFTMgAAAAASUVORK5CYII="/>
+        </div>
+          <div class="div-intput-box">
+            <input type="email" placeholder="Email" required="required">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANlJREFUSEvtldsNwjAMRU83gU1gE5gEmASYhG4Cm0BvlUgmJHLTx09FPiPHx/fadRsWPs3C+VkXYAdcgc1E217AEWiVx1r06C4FmeMIsk0B75D5ApxGUm7AIbzti7cKIkB3tXZZW2yeIkBw9ULVeGpUtTyPb56eAlVz74LOIbCk5quZQbX6GE/RohigXkRIqiatOqfUBQiUU6P7fgQzVdvZGATIqRnanyqAVaPqrdelia4G1H4af4Dr2I9Fcy47DcI+3UX6YrUWpm7U4rp2NY8JWNcvc4wD7psPPK4yGUSJdKwAAAAASUVORK5CYII="/>
+         </div>
+        
+        <div class="div-intput-box">
+            <input type="password" placeholder="password" required="required">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANNJREFUSEvtld0NwiAUhU830U10EnUSdRLdRDfRTdQvgcTG2x7ANH0pLy0Bznd/odPEo5tYX6WAjaSdJL6Mp6TzZ353BpYA9pIuA0JATmMQB8DiWxJA7Jr+geLRStI6eRRyHABxIJGlWH5M0MOQFw7wSgejfVj/SNbjRZMHYwAE3bqtIifg1ucBkFSSl2velXpepyd+eiNKHokjgS0DyPb7YATIcW0BcKanuQCiMC4hssU1f4j+aTReut7NGvUBVwQvWG03F18VNsg1G9yDU6MV7n0DDfwoGYxA/o8AAAAASUVORK5CYII="/>
+          </div> 
+          <div class="div-intput-box">
+            <input type="date" placeholder="date" required="required">
+            
+          </div>
+        <button type="submit" class="bnt"> <a href="form-loginn.html" target="_blank">Register</a></button>
+        <p>Or you can login in with sociallmedia platforms</p>
+        <div class="div-social-icon">
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvtlOEJwlAMhK+T6CbqJjqJOok6iTqJbqL9SgIhPu0rUvqngVJo0rvLJe81GjmakfE1E/Q6PJlFB0krSWtJT5N5ad98HxS5g6WkkwGXgG6SNkMYMsE1gAN2tw68m12b53sOhO2t/hyTkWBr6slTBFhtYCXijtnGSIA1kGQbUFcKZkOOBwI6QBizIrpOI8HDirOKVwHdRURLc1mH/S8BW7UwZLqnK59RZ3EkcDW/LPINyzOqmkEc8sewzGdEEKiL21JFwI/RUwBYU8LX0IdXfRaGHjQ8/nYWiqtWuotQi12jXBW1B6u6brLbtFphX+HcQZ9DegO51TgZz6AncwAAAABJRU5ErkJggg=="/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lY2NwjAMhV83gUmATWASYBK4Se42ATahX5VEbur8FB2WUFAT+9l+L86gL9vw5fjqAdhL4rcL63Nc/yS9wsr/otUANpJuIWgtBoAHSawLKwFcJJ1XtI/gP+N5/GbmAfQGJyhVWrvmIDkADo9K5gQlyN2csQmxfwrcTEdygN9Gz7dOr/OKAeHcAuAYSC0VQNZkF41q8Ynqsn6QPqnLVtDqve1vK5l01gIgSRxLRvax961kyJ4qZhVAbq4KC7YGIPFgK/AAZoQVSisJY4ptAbyDPQBeYkkQLZLjGCAZOwpsK7174wIw0KjiP0hOfK25aL0kJwV5N7k2KnoB0iXzAPhW0ngPQHPYxf57IC0Au594XPPglAAWE9SqpOfJjEMN8uLzyEjhO3J0XzJvmlYU+vlWTwWfRx8934+GURlCF0MNAAAAAElFTkSuQmCC"/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWBJREFUSEu1lY1NxTAMhP02gUmATWASYBJgEmAS2AT6Vbno8temT6qlqmpi+3yX2L3EyXY5OX/MANxHBM9dev9GBM/38v2VnmGdWwA3EfGWkm4RBewhgTZ+I4CXiHg+IB8gH4s/cYX1AB5T5QfyZ9fXGqQGQJaf5I6+Twt1AMWGSjH8MBLixz7nxD4xrK1WA3ya5u/JWQmVvPftkuJ32wOopXGAPbm4DMTLOPSVhTOoAbLTXvYkmaSVdOuBO4BXUdCcAMDF5aV6CiwAqECHlx0mk+PWLdAZOMA1DDw+F+8ATvEagD9jmy+IA9Tde+QWDWMdgEaBhVvTmdU+Z+aNuHlNdRMIohsBpEM1PVnzZnNJHbe4IKNRoQmpEaCx4Ynq5mqq740K1qTnnjy9iQtLzi7b3riWPIziItAKUbIm+YiBAvyH02MjBs0EnWHgPupuP2D2R+vFRZv5Jx+YFq3r6QD/Wc9YGdHIjH4AAAAASUVORK5CYII="/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANpJREFUSEvtldENwjAMBV83oZvAJjBJ2QQ2gU0ok4BOipFJGyLFSr+wFFVVYl/87CSDOtvQOb42B9wk7YNZzZJGi5Fn8AoGX8T9BbhLYjfHBugnbglwlXRKgVtkqwLY/SEBLg1ZVAFIA+QpaeohEQAGtksDoP3ztTXM551XzcDXwCQyJwtmQGDnLNMQYE0xsni4iTDAOotOI1vMd1sIgEQEw0rtHAJw8KhLDvDt/AfEJbKTjM4UlTa0bvEHa20dPtUaNNwOXy5FQMvFlm/GX5TbP5lRaRb+3R/9NwReTBmWBSIqAAAAAElFTkSuQmCC"/></a>
+
+        </div>
+     </form>
+    </div>
+    
+    <div class="toggle-panel ">
+        <h1>WELCOME TO !!!!!</h1> <br><br> 
+        <div class="logo">Digitale WEB register </div><br> <br> 
+        
+       
+        <h2>Don't have an account ? </h2><br> <br> 
+        <h3>Fill this out ---------- ></h3> <br><br> 
+     
+
+</div>
+    </div>
+    <!-- javascript  -->
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+    let inputs = document.querySelectorAll(".div-intput-box input");
+    let button = document.querySelector(".bnt");
+    let empty = false;
+
+    inputs.forEach(input => {
+        if (input.value.trim() === "") {
+            empty = true;
+        }
+    });
+
+    if (empty) {
+        event.preventDefault(); // منع إرسال النموذج
+        button.classList.add("shake");
+
+        setTimeout(() => {
+            button.classList.remove("shake");
+        }, 300);
+    }
+});
+document.querySelector(".bnt").addEventListener("mouseover", function() {
+    let inputs = document.querySelectorAll(".div-intput-box input");
+    let empty = false;
+
+    inputs.forEach(input => {
+        if (input.value.trim() === "") {
+            empty = true;
+        }
+    });
+
+    if (empty) {
+        let button = document.querySelector(".bnt");
+        let randomX = Math.floor(Math.random() * 300) - 150;
+        let randomY = Math.floor(Math.random() * 300) - 150;
+
+        button.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    }
+});
+    </script>
+</body>
+</html>

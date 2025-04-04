@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Zuckerberg</title>
+    <style>
+        button {
+            border-radius: 10px;
+            margin-left: 1800px;
+            width: 70px;
+            height: 40px;
+
+        }
+
+        .menu_fixed {
+            padding: 0;
+            margin: 0;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: fixed;
+        }
+
+        ul {
+            list-style: none;
+            background-color: color #22438c;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+
+        }
+
+
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: rgb(252, 0, 0);
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        img {
+            padding-top: 10px;
+        }
+
+        p {
+            padding-left: 600px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            padding-bottom: 30px;
+
+        }
+
+        .header {
+            background-color: blueviolet;
+            height: 70px;
+            font-size: 40px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .logo {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            border-style: dashed;
+        }
+
+        .light {
+            font-weight: normal;
+            color: gray;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+
+
+        }
+
+        .nav-links li a:hover {
+            color: rgb(120, 247, 183);
+
+        }
+
+
+        .nav-links li {
+            display: inline;
+            transition: 1s;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .new {
+            background-color: #C2F5E9;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+
+
+        .menu {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 30px;
+            height: 40px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+
+            float: right;
+        }
+
+        .research {
+            padding: 5px 15px;
+            border: 1PX solid black;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            color: black;
+            text-align: center;
+            transition: 1s;
+
+        }
+
+        .research:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+
+        .li2 a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+            transition: 1s;
+            border: 1px solid black;
+
+
+        }
+
+        .li2 a:hover {
+            background-color: #C2F5E9;
+            transform: translate(0, -10px);
+        }
+
+        .login-btn {
+            border-radius: 15px;
+            border: 1PX solid black;
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            transition: 1s;
+
+        }
+
+        .login-btn:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+
+        h3 {
+            font-size: 20px;
+        }
+        h4{
+            color: red;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin-left: 80px;
+        }
+  
+        
+
+
+
+.slogo {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 0px ;
+            padding-bottom: 10px; 
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position:fixed;
+            z-index: 1;
+            width: 100%;
+            height: 120px;
+            top: 0;
+            
+        }
+  .allbar{
+            display: flex;
+            /*  justify-content: space-around;  */
+            gap: 700px;
+            background-color: white;
+            width: 100%;
+            z-index: 0;
+            margin-top: 140px;
+           
+
+        }
+ footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 60px;
+            color: white;
+            margin-top: 50px;
+
+        }
+i{
+    color: green;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Digitale</div>
+        <ul class="nav-links">
+            <li><a href="tpweb.html">HOME <span class="new">de notre site</span></a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">CONTACT US </a></li>
+            <li><a href="#">MORE</a></li>
+            <div class="search-box">
+                <input type="text" placeholder="Rechercher">
+                <span> <a href="#" class="research">research</a></span>
+            </div>
+
+
+        </ul>
+        <a href="#" class="login-btn">
+            sign-in
+        </a>
+
+    </nav>
+    <div class="allbar">
+        <ul class="menu">
+           
+            <li class="li2"><a href="#"><img src="mark-zuckerberg-4.jpg" height="200px" width="200px">Mark
+                    Zuckerberg</a></li>
+
+        </ul>
+
+    </div>
+
+   
+
+
+    <div class="box">
+     <h3>!!        In 2004, Mark Zuckerberg was a 19-year-old Harvard student with a knack for coding.<br><br> One night, he built a website called Facemash, which let students compare two photos of their classmates and vote on who was more attractive. <br><br>The site became wildly popular—but also got him into trouble for using student photos without permission. Harvard shut it down within days.<br><br>
+
+        Instead of giving up, Zuckerberg saw potential in a social network for college students. <br><br>Along with his friends Dustin Moskovitz, Eduardo Saverin, and Chris Hughes, he launched TheFacebook (later just "Facebook").<br><br> At first, it was just for Harvard students, but it quickly expanded to other universities and then to the whole world.<br><br>
+        
+        By 2005, Facebook had over 5 million users, and big investors started pouring in money.<br><br> Zuckerberg dropped out of Harvard and moved to Silicon Valley to run Facebook full-time. The rest is history—Facebook became one of the biggest tech <br> <br> companies ever, making Zuckerberg one of the youngest billionaires in history.
+    </h3>
+        <div class="img"></div>
+        <h4> 1- !!how is Mark Zuckerberg :</h4>
+        <div class="nom_p_dn">As of March 15, 2025, Mark Zuckerberg, CEO of Meta Platforms (formerly Facebook), is
+            navigating several significant challenges:</div>
+   
+    <h4>2-!! Mark Zuckerberg compaies: </h4>
+    <div class="entreprise">
+        <ul>
+        <li><i> Facebook: </i> Launched in 2004, it remains one of the world's largest social media platforms.</li> <br> <br>
+
+        <li><i> Instagram:</i> Acquired in 2012, this photo and video-sharing platform has grown significantly inpopularity.</li><br> <br>
+
+        <li> <i>WhatsApp:</i> Purchased in 2014, it's a leading messaging application used globally.</li> <br> <br>
+
+        <li><i>Oculus VR:</i> Acquired in 2014, specializing in virtual reality hardware and software.</li> <br><br>
+
+        <li><i>Giphy:</i> A platform for sharing GIFs, acquired in 2020.</li> <br> <br>
+
+        <li><i>CTRL-Labs:</i> A neural interface startup acquired in 2019, focusing on brain-computer interfacetechnology.</li><br> <br> 
+     </ul>
+    </div>
+
+
+
+
+    <h4>3-!! Mark Zuckerberg social-media: </h4>
+    <div class="social-media">
+       <i class="slogo"> 1. Facebook (His Main Platform) </i>🔵<br>
+       - Zuckerberg primarily uses Facebook for public communication. <br>
+       - Posts about Meta’s new products, company updates, AI, and the Metaverse.<br>
+       - Occasionally shares personal moments, like his hobbies (MMA, running) or family life.<br>
+       <i> -- "🔗 Facebook Profile: Mark Zuckerberg’s Official Facebook "</i><br>
+
+         <i class="slogo">2. Instagram </i>📸<br>
+        Rarely posts but shares occasional updates about Meta and personal life.<br>
+        Focuses on VR, AI, and Meta innovations.<br>
+        <i>🔗 Instagram Profile: @zuck</i><br>
+
+         <i class="slogo">3.Threads (Meta’s Twitter Alternative) </i>🧵<br>
+        Zuckerberg uses Threads to discuss Meta’s latest projects and AI advancements.
+        Engages in conversations about competition with Twitter/X.<br>
+        <i class="slogo">4. WhatsApp & Messenger 💬</i><br> 
+        Uses these for private and internal company communications.<br>
+        Occasionally promotes new WhatsApp features like end-to-end encryption and AI integration.<br>
+         <i class="slogo"> 5.Twitter/X (Inactive) </i>🐦<br>
+        Zuckerberg does not actively use Twitter/X.<br>
+        Had a brief exchange with Elon Musk about a potential MMA fight in 2023.</div> <br>
+    <h4>4-!! Mark Zuckerberg Awards: </h4>
+    <div class="awards">
+        <i>!!Time Person of the Year (2010):</i><br> <br> Recognized for connecting more than half a billion people
+        and mapping social relations among them.<br><br>
+
+        <i>Axel Springer Award (2016):</i> <br><br> Honored for his contributions to the digital revolution and social media.<br><br>
+
+        <i>Honorary Doctorate from Harvard University (2017):</i> <br><br>Awarded an honorary Doctor of Laws degree, acknowledging his
+        influence in technology and social media.</div>
+    </div>
+        <footer> 
+            EDITED BY AIT OUMAACH MOURAD 
+         
+         </footer>
+
+</body>
+
+</html>

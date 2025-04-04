@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bill gates</title>
+    <style>
+        button {
+            border-radius: 10px;
+            margin-left: 1800px;
+            width: 70px;
+            height: 40px;
+
+        }
+
+        .menu_fixed {
+            padding: 0;
+            margin: 0;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: fixed;
+        }
+
+        ul {
+            list-style: none;
+            background-color: color #22438c;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+
+        }
+
+
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: rgb(252, 0, 0);
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        img {
+            padding-top: 10px;
+        }
+
+        p {
+            padding-left: 600px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            padding-bottom: 30px;
+
+        }
+
+        .header {
+            background-color: blueviolet;
+            height: 70px;
+            font-size: 40px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .logo {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            border-style: dashed;
+        }
+
+        .light {
+            font-weight: normal;
+            color: gray;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+
+
+        }
+
+        .nav-links li a:hover {
+            color: rgb(120, 247, 183);
+
+        }
+
+
+        .nav-links li {
+            display: inline;
+            transition: 1s;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .new {
+            background-color: #C2F5E9;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+
+
+        .menu {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 30px;
+            height: 40px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+
+            float: right;
+        }
+
+        .research {
+            padding: 5px 15px;
+            border: 1PX solid black;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            color: black;
+            text-align: center;
+            transition: 1s;
+
+        }
+
+        .research:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+
+        .li2 a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+            transition: 1s;
+            border: 1px solid black;
+
+
+        }
+
+        .li2 a:hover {
+            background-color: #C2F5E9;
+            transform: translate(0, -10px);
+        }
+
+        .login-btn {
+            border-radius: 15px;
+            border: 1PX solid black;
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            transition: 1s;
+
+        }
+
+        .login-btn:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+
+        h3 {
+            font-size: 20px;
+        }
+        h4{
+            color: red;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin-left: 80px;
+        }
+  
+        
+
+
+
+.slogo {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 0px ;
+            padding-bottom: 10px; 
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position:fixed;
+            z-index: 1;
+            width: 100%;
+            height: 120px;
+            top: 0;
+            
+        }
+  .allbar{
+            display: flex;
+            /*  justify-content: space-around;  */
+            gap: 700px;
+            background-color: white;
+            width: 100%;
+            z-index: 0;
+            margin-top: 140px;
+           
+
+        }
+ footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 60px;
+            color: white;
+            margin-top: 50px;
+
+        }
+i{
+    color: green;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Digitale</div>
+        <ul class="nav-links">
+            <li><a href="tpweb.html">HOME <span class="new">de notre site</span></a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">CONTACT US </a></li>
+            <li><a href="#">MORE</a></li>
+            <div class="search-box">
+                <input type="text" placeholder="Rechercher">
+                <span> <a href="#" class="research">research</a></span>
+            </div>
+
+
+        </ul>
+        <a href="#" class="login-btn">
+            sign-in
+        </a>
+
+    </nav>
+    <div class="allbar">
+        <ul class="menu">
+           
+            <li class="li2"><a href="#"><img src="pic-Bill_Gates.jpg" height="200px" width="200px">Bill_Gates</a></li>
+
+        </ul>
+
+    </div>
+
+   
+
+
+    <div class="box">
+     <h3>!! In the early days of Microsoft, Bill Gates and his team were working hard to develop a new operating system—MS-DOS—for IBM's first personal computer. <br> <br>In 1980, IBM reached out to Microsoft to provide an operating system for their new PC. The challenge was that Microsoft didn’t have an operating system ready, <br><br>but Gates was determined to seize the opportunity.<br><br>
+
+        Instead of developing an OS from scratch, Gates made a deal to buy an existing system (QDOS), which he modified and rebranded as MS-DOS. <br><br>This move was a game-changer.
+        
+        When the deal was finalized, IBM assumed they were licensing MS-DOS exclusively, but Gates had kept the rights to license it <br><br>to other computer manufacturers. This was a brilliant move—Microsoft ended up licensing MS-DOS to multiple companies, making it the standard operating system for PCs worldwide.<br><br>
+        
+        By 1986, when Microsoft went public, Gates became a billionaire at just 31 years old.<br><br> This story shows how his bold thinking and calculated risk-taking helped him build the foundation for his success, which would later allow him to focus on global philanthropy.</h3>
+        <div class="img"></div>
+        <h4> 1- !!how isBill Gates :</h4>
+        <div class="nom_p_dn"> Bill Gates is an American billionaire entrepreneur, philanthropist, and software developer, best known as the co-founder of Microsoft. He played a key role in <br><br> the personal computer revolution, making computers more accessible to the world.</div>
+   
+    <h4>2-!! Bill Gates compaies: </h4>
+    <div class="entreprise">
+        <ul>
+        <li><i> 🖥 Co-founded Microsoft (1975):  </i>  Created the Windows operating system, which became the most widely used in the world.</li> <br> <br>
+
+        <li><i> 💼 Cascade Investment : </i> Cascade Investment is Bill Gates' private investment firm. It manages his wealth and makes investments in various sectors, including energy, real estate, and technology.</li><br> <br>
+
+        <li> <i>📈Berkshire Hathaway:  </i> While not directly a company founded by Gates, Berkshire Hathaway (led by Warren Buffett) holds a significant portion of Gates' wealth through Bill Gates’ personal investments in the company.</li> <br> <br>
+
+        <li><i>🌐 Gates Ventures : </i> Acquired in 2014, specializing in virtual reality hardware and software.</li> <br><br>
+
+        <li><i>🌍 Breakthrough Energy Ventures : </i> Breakthrough Energy Ventures is a fund Bill Gates helped create to support companies developing innovative energy technologies to address climate change.</li> <br> <br>
+
+        <li><i>🌐 Gates Ventures : </i> A neural interface startup acquired in 2019, focusing on brain-computer interfacetechnology.</li><br> <br> 
+     </ul>
+    </div>
+
+
+
+
+    <h4>3-!! Bill Gates social-media: </h4>
+    <div class="social-media">
+
+         <i class="slogo">1. Instagram: </i>📸<br>
+         Gates occasionally shares personal moments and images, often highlighting the work of his foundation or his travels related to global health and philanthropy.<br>
+        <br>
+        <i class="slogo">2. YouTube 💬</i><br> 
+        Bill Gates also uses YouTube to share videos, including interviews, discussions about global issues, and talks related to his book recommendations.<br> <br>
+         <i class="slogo"> 3.Twitter/X (Inactive) </i>🐦<br>
+         Bill Gates uses X (formerly Twitter) to share updates about his charitable work, book recommendations, global health issues, and climate change efforts.</div> <br>
+    <h4>4-!! Bill Gates Awards: </h4>
+    <div class="awards">
+        <i>!!Presidential Medal of Freedom (2016):</i><br> <br> One of the highest civilian honors in the U.S., awarded by President Obama, recognizing Gates for his pioneering work in technology and his commitment to improving lives through philanthropy.<br><br>
+
+        <i>Padma Bhushan (2015):</i> <br><br>India's third-highest civilian award, which Gates received for his contributions to global health and development.<br><br>
+
+        <i>Time 100 Most Influential People:</i> <br><br>Gates has appeared on Time's list multiple times, including being named one of the world’s 100 most influential people in various years for his work in technology and philanthropy.</div>
+    </div>
+        <footer> 
+            EDITED BY AIT OUMAACH MOURAD 
+         
+         </footer>
+
+</body>
+
+</html>

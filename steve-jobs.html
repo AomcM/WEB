@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve_Jobs</title>
+    <style>
+        button {
+            border-radius: 10px;
+            margin-left: 1800px;
+            width: 70px;
+            height: 40px;
+
+        }
+
+        .menu_fixed {
+            padding: 0;
+            margin: 0;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: fixed;
+        }
+
+        ul {
+            list-style: none;
+            background-color: color #22438c;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+
+        }
+
+
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: rgb(252, 0, 0);
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        img {
+            padding-top: 10px;
+        }
+
+        p {
+            padding-left: 600px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            padding-bottom: 30px;
+
+        }
+
+        .header {
+            background-color: blueviolet;
+            height: 70px;
+            font-size: 40px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .logo {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            border-style: dashed;
+        }
+
+        .light {
+            font-weight: normal;
+            color: gray;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+
+
+        }
+
+        .nav-links li a:hover {
+            color: rgb(120, 247, 183);
+
+        }
+
+
+        .nav-links li {
+            display: inline;
+            transition: 1s;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .new {
+            background-color: #C2F5E9;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+
+
+        .menu {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 30px;
+            height: 40px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+
+            float: right;
+        }
+
+        .research {
+            padding: 5px 15px;
+            border: 1PX solid black;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            color: black;
+            text-align: center;
+            transition: 1s;
+
+        }
+
+        .research:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+
+        .li2 a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+            transition: 1s;
+            border: 1px solid black;
+
+
+        }
+
+        .li2 a:hover {
+            background-color: #C2F5E9;
+            transform: translate(0, -10px);
+        }
+
+        .login-btn {
+            border-radius: 15px;
+            border: 1PX solid black;
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            transition: 1s;
+
+        }
+
+        .login-btn:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+
+        h3 {
+            font-size: 20px;
+        }
+        h4{
+            color: red;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin-left: 80px;
+        }
+  
+        
+
+
+
+.slogo {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 0px ;
+            padding-bottom: 10px; 
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position:fixed;
+            z-index: 1;
+            width: 100%;
+            height: 120px;
+            top: 0;
+            
+        }
+  .allbar{
+            display: flex;
+            /*  justify-content: space-around;  */
+            gap: 700px;
+            background-color: white;
+            width: 100%;
+            z-index: 0;
+            margin-top: 140px;
+           
+
+        }
+ footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 60px;
+            color: white;
+            margin-top: 50px;
+
+        }
+i{
+    color: green;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Digitale</div>
+        <ul class="nav-links">
+            <li><a href="tpweb.html">HOME <span class="new">de notre site</span></a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">CONTACT US </a></li>
+            <li><a href="#">MORE</a></li>
+            <div class="search-box">
+                <input type="text" placeholder="Rechercher">
+                <span> <a href="#" class="research">research</a></span>
+            </div>
+
+
+        </ul>
+        <a href="#" class="login-btn">
+            sign-in
+        </a>
+
+    </nav>
+    <div class="allbar">
+        <ul class="menu">
+            <li class="li2"><a href="steve-jobs.html" target="_blank" ><img src="Steve_Jobs_Headshot_2010-CROP_(cropped_2).jpg" height="200px"width="200px" >Steve_Jobs</a></li>
+
+
+        </ul>
+
+    </div>
+
+   
+
+
+    <div class="box">
+     <h3 > The Visionary Who Changed the World :<br><br>
+        In 1976, two young men, Steve Jobs and Steve Wozniak, built the first Apple computer in a garage.<br> <br>They had a vision to make personal computing accessible to everyone, and Apple was born. Jobs, with his keen eye for design and innovation, played a crucial <br><br>role in shaping the company’s future.<br><br>
+        
+        Apple's first major success came with the Apple II, a revolutionary personal computer that was one of the first to be sold to the public. But it was 1984 that<br><br> marked a turning point. Jobs introduced the Macintosh, a computer with a graphical user interface (GUI) that made personal computers user-friendly. <br><br>The “1984” commercial, aired during the Super Bowl, famously showcased Apple's rebellion against the big, faceless corporate world represented by IBM. </h3>
+        
+        <h4> 1- !!how is Steve_Jobs :</h4>
+        <div class="nom_p_dn">
+            Steve Jobs was an incredibly influential figure in the technology and design industries, best known for co-founding Apple Inc. and revolutionizing multiple industries, including personal computing, music, animation, <br> <br> and mobile communications.
+    <h4>2-!! Steve_Jobs  compaies: </h4>
+    <div class="entreprise">
+        <ul>
+        <li><i> Apple Inc. 🍏: </i><br> Founded: 1976 (by Steve Jobs, Steve Wozniak, and Ronald Wayne)
+            Role: Co-founder, CEO, Chairman
+            
+            Apple is the company most closely associated with Steve Jobs. He co-founded it in his garage, where he and Wozniak built the Apple I and Apple II. Jobs led Apple through periods of immense innovation, including the creation of Macintosh, iPod, iPhone, and iPad. These products transformed computing, music, telecommunications, and entertainment industries.</li> <br> <br>
+
+        <li><i> NeXT Inc. 💻:</i> Founded: 1985 (by Steve Jobs after leaving Apple)
+            Role: Founder, CEO
+            
+            After being ousted from Apple, Jobs founded NeXT, which focused on creating high-performance workstations for higher education and businesses. NeXT didn’t become a mass-market success, but its technology laid the groundwork for the future of Apple. In 1996, Apple acquired NeXT for $429 million, which brought Jobs back to the company.</li><br> <br>
+
+        <li> <i> Pixar Animation Studios 🎬:</i> Founded: 1986 (Jobs acquired it)
+            Role: Owner, Chairman
+            
+            In 1986, Steve Jobs bought a small computer animation company called Pixar for $10 million. Over time, Pixar grew into one of the most successful animation studios, creating films like Toy Story, Finding Nemo, The Incredibles, and more.</li> <br> <br>
+
+        <li><i>Apple's Acquisitions and Subsidiaries 🔗:</i> Jobs also played a key role in Apple’s acquisitions, expanding the company’s capabilities and portfolio:
+
+            Beats Electronics (2014): Jobs' Apple acquired Beats for $3 billion, which included the Beats by Dre headphones and streaming service Beats Music. This acquisition helped Apple enter the music streaming market, eventually leading to the creation of Apple Music.</li> <br><br>
+
+        
+     </ul>
+    </div>
+
+
+
+
+    <h4>3-!! Steve_Jobs social-media: </h4>
+    <div class="social-media">
+       <i class="slogo"> 1. Apple's Use of Social Media </i>🍏<br>
+       While Jobs himself wasn't active on social media, Apple as a company has become one of the most successful brands on platforms like Twitter, Instagram, and Facebook. <br>
+       <br>
+
+         <i class="slogo">2. Instagram </i>📸 <i class="slogo">5.Twitter/X (Inactive) </i>🐦<br>
+         there are official accounts dedicated to Steve Jobs, including on platforms like Twitter and Instagram, where fans and tech enthusiasts share quotes, images, and memories about his life and contributions.
+         <br><br>Twitter accounts like @SteveJobsQuotes and @SteveJobsDaily<br><br>
+        
+
+         <i class="slogo">3.Threads (Meta’s Twitter Alternative) </i>🧵<br>
+        Zuckerberg uses Threads to discuss Meta’s latest projects and AI advancements.
+        Engages in conversations about competition with Twitter/X.<br>
+        <br>
+    </div> <br>
+    <h4>4-!! Steve_Jobs Awards: </h4>
+    <div class="awards">
+        <i>!!National Medal of Technology (1985):</i><br> <br> This prestigious award recognized Jobs and Steve Wozniak for their creation of the personal computer and their contributions to advancing technology. It was one of the first major recognitions of Jobs' impact on the tech industry.<br><br>
+
+        <i>!!Time Magazine’s 100 Most Influential People (Multiple Years):</i> <br><br> Steve Jobs was regularly featured on Time's list of the 100 most influential people in the world. This honor recognized him not only for his role at Apple but for his impact on multiple industries, including personal computing, entertainment, and mobile technology.<br><br>
+
+        <i>!!Apple’s “Macworld” Keynote Recognition (Various Years):</i> <br><br>Jobs received praise and recognition for his captivating presentations at Macworld Expo and Apple's product launches, where he introduced revolutionary products like the iPhone, iPad, and iMac. These keynotes became iconic in the tech world, showcasing Jobs' visionary leadership and presentation skills.</div>
+    </div>
+        <footer> 
+            EDITED BY AIT OUMAACH MOURAD 
+         
+         </footer>
+
+</body>
+
+</html>

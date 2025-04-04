@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> le monde digital</title>
+   <style>
+        button {
+            border-radius: 10px;
+            margin-left: 1800px;
+            width: 70px;
+            height: 40px;
+
+        }
+
+        .menu_fixed {
+            padding: 0;
+            margin: 0;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: fixed;
+        }
+
+        ul {
+            list-style: none;
+            background-color: color #22438c;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+           
+        }
+      
+
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: rgb(252, 0, 0);
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        img {
+            padding-top: 10px;
+        }
+
+        p {
+            padding-left: 600px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            padding-bottom: 30px;
+
+        }
+
+        .header {
+            background-color: blueviolet;
+            height: 70px;
+            font-size: 40px;
+        }
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 0px ;
+            padding-bottom: 10px; 
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position:fixed;
+            z-index: 1;
+            width: 100%;
+            height: 120px;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            border-style: solid;
+        }
+
+        .light {
+            font-weight: normal;
+            color: gray;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            
+
+        }
+        .nav-links li a:hover{
+           color: rgb(120, 247, 183);
+           
+        }
+        
+
+        .nav-links li {
+            display: inline;
+            transition: 1s;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .new {
+            background-color: #C2F5E9;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+       
+
+        .menu {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 30px;
+            height: 40px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            
+            float: right;
+        }
+
+        .research {
+            padding: 5px 15px;
+            border: 1PX solid black;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            color: black;
+            text-align: center;
+            transition: 1s;
+
+        }
+        .research:hover{
+            background-color: black;
+            color: white;
+            
+        }
+        .allbar{
+            display: flex;
+            /*  justify-content: space-around;  */
+            gap: 700px;
+            background-color: white;
+            width: 100%;
+            z-index: 0;
+            margin-top: 40px;
+           
+
+        }
+        .li2 a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+            transition: 1s;
+            border: 1px solid black;
+            margin-top: 150px;
+        
+
+        }
+        .li2 a:hover{
+            background-color:  #C2F5E9 ;
+            transform: translate(0,-10px);
+           
+        }
+        .login-btn{
+            border-radius: 15px;
+            border: 1PX solid black;
+            padding: 12px ;
+            text-decoration: none;
+            color: black;
+            transition: 1s;
+
+        }
+        .login-btn:hover{
+            background-color: black;
+            color: white;
+
+        }
+        i{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            margin-left: 60px;
+
+        }
+      
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 60px;
+            
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Digitale</div>
+        <ul class="nav-links">
+            <li><a href="tpweb.html">HOME <span class="new">de notre site</span></a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">CONTACT US </a></li>
+            <li><a href="#">MORE</a></li>
+            <div class="search-box">
+                <input type="text" placeholder="Rechercher">
+                <span> <a hreform-loginn.htmlf="#" class="research">research</a></span>
+            </div>
+        </ul>
+        <a href="form-loginn.html" class="login-btn" >
+              sign-in 
+        </a>
+    </nav>
+    <div class="allbar">
+        <ul class="menu">
+            
+            <li class="li2"><a href="steve-jobs.html" target="_blank" ><img src="Steve_Jobs_Headshot_2010-CROP_(cropped_2).jpg" height="200px"width="200px" >Steve_Jobs</a></li>
+            <li class="li2"><a href="Bill-Gates.html" target="_blank"><img src="pic-Bill_Gates.jpg" height="200px" width="200px">Bill_Gates</a></li>
+            <li class="li2"><a href="Elon-Musk.html" target="_blank"><img src="pic-elon-musk.jpg" height="200px" width="200px" >Elon Musk</a></li>
+            <li class="li2"><a href="Mark-Zuckerberg.html" target="_blank"><img src="mark-zuckerberg-4.jpg" height="200px" width="200px"  >Mark Zuckerberg</a></li>
+
+        </ul>
+       
+    </div>
+    <div class="content">
+    <h3>The digital world refers to the interconnected environment created by computers,<br> the internet, and digital technologies. It includes everything from websites, social media,<br> and online communication to artificial intelligence, cloud computing,<br> and virtual reality.
+</h3>
+        <h2><li>Key Aspects of the Digital World:</li></h2>
+        <ul>1- <i>!Internet & Connectivity</i> – Websites, search engines, social media, and online services.</ul>
+        <ul>2- <i>!Communication</i> – Emails, messaging apps, video calls, and social networks.</ul>
+        <ul>3- <i>!Digital Media</i> – Streaming platforms, digital art, and online entertainment.</ul>
+        <ul>4- <i>!Artificial Intelligence & Automation</i> – AI-powered applications, machine learning, and chatbots.</ul>
+        <ul>5- <i>!E-Commerce & Online Transactions</i> – Online shopping, banking, and digital payments.</ul>
+        <ul>6- <i>!Cloud Computing – </i>Storing and accessing data over the internet.</ul>
+        <ul>7- <i>! Cybersecurity – </i>Protecting data and systems from cyber threats.</ul>
+        <ul>8- <i>! Metaverse & Virtual Reality</i> – Digital spaces for interaction, gaming, and business.</ul></div>
+
+<div class="body">
+        <div class="img"></div>
+        <div class="nom_p_dn"></div>
+    </div>
+    <div class="box entreprise"></div>
+    <div class="box social-media"></div>
+    <div class="box awards"></div>
+
+<footer> 
+   EDITED BY AIT OUMAACH MOURAD 
+
+</footer>
+
+</body>
+
+</html>

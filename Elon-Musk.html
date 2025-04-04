@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk</title>
+    <style>
+        button {
+            border-radius: 10px;
+            margin-left: 1800px;
+            width: 70px;
+            height: 40px;
+
+        }
+
+        .menu_fixed {
+            padding: 0;
+            margin: 0;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: fixed;
+        }
+
+        ul {
+            list-style: none;
+            background-color: color #22438c;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+
+        }
+
+
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: rgb(252, 0, 0);
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        img {
+            padding-top: 10px;
+        }
+
+        p {
+            padding-left: 600px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            padding-bottom: 30px;
+
+        }
+
+        .header {
+            background-color: blueviolet;
+            height: 70px;
+            font-size: 40px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .logo {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            border-style: dashed;
+        }
+
+        .light {
+            font-weight: normal;
+            color: gray;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+
+
+        }
+
+        .nav-links li a:hover {
+            color: rgb(120, 247, 183);
+
+        }
+
+
+        .nav-links li {
+            display: inline;
+            transition: 1s;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .new {
+            background-color: #C2F5E9;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+
+
+        .menu {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 30px;
+            height: 40px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+
+            float: right;
+        }
+
+        .research {
+            padding: 5px 15px;
+            border: 1PX solid black;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            color: black;
+            text-align: center;
+            transition: 1s;
+
+        }
+
+        .research:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+
+        .li2 a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+            transition: 1s;
+            border: 1px solid black;
+
+
+        }
+
+        .li2 a:hover {
+            background-color: #C2F5E9;
+            transform: translate(0, -10px);
+        }
+
+        .login-btn {
+            border-radius: 15px;
+            border: 1PX solid black;
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            transition: 1s;
+
+        }
+
+        .login-btn:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+
+   
+        h4{
+            color: red;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin-left: 80px;
+        }
+  
+        
+
+
+
+.slogo {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 0px ;
+            padding-bottom: 10px; 
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position:fixed;
+            z-index: 1;
+            width: 100%;
+            height: 120px;
+            top: 0;
+            
+        }
+  .allbar{
+            display: flex;
+            /*  justify-content: space-around;  */
+            gap: 700px;
+            background-color: white;
+            width: 100%;
+            z-index: 0;
+            margin-top: 140px;
+           
+
+        }
+ footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 60px;
+            color: white;
+            margin-top: 50px;
+
+        }
+i{
+    color: green;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Digitale</div>
+        <ul class="nav-links">
+            <li><a href="tpweb.html">HOME <span class="new">de notre site</span></a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">CONTACT US </a></li>
+            <li><a href="#">MORE</a></li>
+            <div class="search-box">
+                <input type="text" placeholder="Rechercher">
+                <span> <a href="#" class="research">research</a></span>
+            </div>
+
+
+        </ul>
+        <a href="#" class="login-btn">
+            sign-in
+        </a>
+
+    </nav>
+    <div class="allbar">
+        <ul class="menu">
+           
+            <li class="li2"><a href="#"><img src="pic-elon-musk.jpg" height="200px" width="200px" >Elon Musk</a></li>
+
+        </ul>
+
+    </div>
+
+   
+
+
+<div class="box">
+     <h3>In 2002, Elon Musk founded SpaceX with a bold vision: making space travel cheaper and eventually colonizing Mars. But things didn’t go as smoothly as planned. <br><br>
+
+        Between 2006 and 2008, SpaceX launched three rockets—all failed. Each failure cost millions, and Musk had invested almost all his money into the company. <br><br>After the third failure, SpaceX was on the verge of collapse. Even Tesla, which he had invested in, was struggling financially at the time. <br><br>
+        
+        Musk had just one rocket left—the Falcon 1 (Flight 4)—before the company would run out of money. If this one failed, SpaceX was finished.<br><br> On September 28, 2008, the rocket finally succeeded, reaching orbit. It was a historic moment—the first privately developed rocket to reach orbit.<br><br>
+        
+        Just when Musk thought things couldn’t get worse, something incredible happened: NASA awarded SpaceX a $1.6 billion contract to deliver cargo to the International Space Station. <br><br>This saved SpaceX and set it on the path to becoming one of the most important space companies in the world.<br><br>
+        
+        Today, SpaceX is launching astronauts, working on Starship (a rocket designed for Mars), and leading the private space industry.
+     </h3>
+        <div class="img"></div>
+        <h4> 1- !!how is Elon Musk :</h4>
+        <div class="nom_p_dn">Elon Musk is a billionaire entrepreneur, inventor, and business magnate known for his ambitious projects in technology, space exploration, and artificial intelligence. <br>He was born on June 28, 1971, in Pretoria, South Africa, and later moved to the U.S. to pursue his dreams in business and engineering.</div>
+   
+    <h4>2-!! Elon Musk compaies: </h4>
+    <div class="entreprise">
+        <ul>
+        <li><i> 🚗 Tesla: </i> CEO of the electric car company that revolutionized the auto industry.</li> <br> <br>
+
+        <li><i> 🚀 SpaceX: </i> Founder of the company that made space travel cheaper and reusable rockets possible.</li><br> <br>
+
+        <li> <i>💰 PayPal: </i> Co-founded X.com, which became PayPal, and later sold it to eBay for $1.5 billion.</li> <br> <br>
+
+        <li><i>🌍 Neuralink: </i> A company developing brain-chip technology to connect humans with computers.</li> <br><br>
+
+        <li><i>⚡ SolarCity & The Boring Company: </i> Working on sustainable energy and underground transportation.</li> <br> <br>
+
+        <li><i>
+            🐦 Twitter (X):</i> Bought Twitter in 2022 and rebranded it as X.</li><br> <br> 
+     </ul>
+    </div>
+
+
+
+
+    <h4>3-!! Elon Musk social-media: </h4>
+    <div class="social-media">
+       <i class="slogo"> 1. 🐦 Unfiltered Posts </i><br>
+        He tweets whatever is on his mind, from serious business updates to jokes and memes.<br>
+
+         <i class="slogo">2.🚀 Company Announcements </i><br>
+         Instead of using press releases, he often shares Tesla, SpaceX, and Neuralink updates directly on X. <br>
+
+         <i class="slogo">3.🔥 Controversial Takes </i><br>
+            He sometimes posts political opinions, challenges critics, or makes bold claims that stir debates.<br>
+        <i class="slogo">4. 😂 Memes & Humor </i><br> 
+        Musk loves posting memes, sometimes even making jokes about his own businesses.<br>
+         <i class="slogo"> 5.📉 Market Influence </i><br>
+         His tweets have affected stock prices, crypto markets (like Dogecoin), and even Tesla’s valuation.</div> <br>
+    <h4>4-!! Elon Musk Awards: </h4>
+    <div class="awards">
+        <i>!!🏆 Time Person of the Year (2021)</i><br> <br> Recognized for his influence in technology, space, and business.<br><br>
+
+        <i>🚀 Royal Aeronautical Society Gold Medal (2012) </i> <br><br> Given for his contributions to spaceflight and SpaceX’s achievements.<br><br>
+
+        <i>🔬 Heinlein Prize for Advances in Space Commercialization (2011) </i> <br><br>
+    Awarded for his efforts in making space travel more affordable.<br><br>
+        <i>🏅 Axel Springer Award (2020)   </i><br><br>Given to visionaries shaping the future.<br><br>
+        <i>💡 IEEE Honorary Membership (2015)   </i><br><br>Recognized for his work in engineering and innovation.<br><br>
+        <i> 🔵 Fellow of the Royal Society (2018)  </i><br><br>One of the highest honors in science, awarded for contributions to technology and engineering.<br><br>
+        <i> 🚗 Edison Achievement Award (2014) </i><br><br>Given for innovation in technology, especially in Tesla and renewable energy.
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+        <footer> 
+            EDITED BY AIT OUMAACH MOURAD 
+         
+         </footer>
+
+</body>
+
+</html>
